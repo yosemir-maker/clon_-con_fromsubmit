@@ -120,3 +120,59 @@ section{
     background-attachment: fixed;
 }
 
+form{
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2pxsplid #7ab2b2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+form h2{
+    text-align: center;
+    color: #4d869c;
+    margin-bottom: 20px;
+
+}
+
+form label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4d869c;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #7ab2b2;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+form input:focus,
+form textarea:focus{
+    outline: none;
+    border-color: #4d869c;
+    box-shadow: 0 0 5px rgba(77, 134, 156, 0.5);
+}
+
+.enviar{
+    width: 100%;
+    padding: 12px;
+    background-color: #4d869c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enviar:hover{
+    background-color: #7ab2b2;
+}
