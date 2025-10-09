@@ -315,4 +315,24 @@ button:active {
     opacity: 1;
   }
 }
+.gracias{
+    width: 80%;
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn_gracias{
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+}
+
+.img_gracias{
+    width: 80%;
+    height: 80%;
+    
+}
+
+
 
