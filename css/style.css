@@ -334,5 +334,109 @@ button:active {
     
 }
 
+/* === NAVBAR RESPONSIVE === */
+.navbar {
+  background-color: #7ab2b2;
+  color: #fff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+/* --- Botón Hamburguesa --- */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Animación del botón */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* --- Responsive para móviles --- */
+@media (max-width: 480px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #7ab2b2;
+    position: absolute;
+    top: 55px;
+    left: 0;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .nav-list li a {
+    display: block;
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  header h2 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  section, p {
+    font-size: 0.9em;
+  }
+}
+
+
 
 
